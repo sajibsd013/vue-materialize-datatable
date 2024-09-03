@@ -261,11 +261,16 @@
 				required: false,
 				default: true,
 			},
+			currentPageNumber: {
+				type: Number,
+				required: false,
+				default: 1,
+			},
 
 		},
 
 		data: () => ({
-			currentPage: 1,
+			currentPage: this.currentPageNumber,
 			currentPerPage: 10,
 			sortColumn: -1,
 			sortType: 'asc',
